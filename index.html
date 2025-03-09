@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <title>Chess</title>
+</head>
+<body>
+  <div class="game-container">
+    <div class="status">White to move</div>
+    
+    <div class="board-container">
+      <div class="rank-labels"></div>
+      <div>
+        <div class="board" id="board">
+          <div class="promotion-modal" id="promotion-modal"></div>
+        </div>
+        <div class="file-labels"></div>
+      </div>
+    </div>
+    
+    <div class="controls">
+      <button id="restart">New Game</button>
+      <button id="undo">Undo</button>
+    </div>
+    
+    <div class="move-history">
+      <table>
+        <thead>
+          <tr>
+            <th>Move</th>
+            <th>White</th>
+            <th>Black</th>
+          </tr>
+        </thead>
+        <tbody id="moves"></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
