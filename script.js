@@ -640,8 +640,8 @@ function isSquareAttackedByBoard(rank, file, color, board) {
   const opponentColor = color === 'w' ? 'b' : 'w';
   
   const directions = [
-    [-1, 0], [1, 0], [0, -1], [0, 1],  // Rook/Queen directions
-    [-1, -1], [-1, 1], [1, -1], [1, 1]  // Bishop/Queen directions
+    [-1, 0], [1, 0], [0, -1], [0, 1],  // ладья король
+    [-1, -1], [-1, 1], [1, -1], [1, 1]  //слон ферзь
   ];
   
   const knightOffsets = [
