@@ -1,3 +1,4 @@
+// Сменные
 const board = document.getElementById('board');
 const promotionModal = document.getElementById('promotion-modal');
 const statusElement = document.querySelector('.status');
@@ -930,6 +931,7 @@ function restart() {
   movesTable.innerHTML = '';
   updateStatus('White to move');
 }
+//СЮДООООООО
 
 document.getElementById('restart').addEventListener('click', restart);
 document.getElementById('undo').addEventListener('click', undoMove);
